@@ -1,0 +1,47 @@
+@import url(./uac/body.css);
+@import url(./uac/footer.css);
+@import url(./uac/header.css);
+
+:root {
+    /* Static vars */
+    --footer-height: 4rem;
+
+    /* Responsive vars */
+    --header-height: 20rem;
+    --header-logo-size: 16rem;
+    --header-span-size: 24px;
+    --header-h1-size: 48px;
+
+    --body-width: 1024px;
+
+    --fs-normal: 16px;
+    --fs-display: 20px;
+
+    @media only screen
+    and (max-width: 1024px)
+    {
+        --header-height: 16rem;
+        --header-logo-size: 12rem;
+        --header-span-size: 18px;
+        --header-h1-size: 36px;
+
+        --body-width: calc(100vw - 1rem);
+
+        --fs-normal: 14px;
+        --fs-display: 16px;
+    }
+
+    @media only screen
+    and (max-width: 640px)
+    {
+        --header-height: 12rem;
+        --header-logo-size: 8rem;
+        --header-span-size: 12px;
+        --header-h1-size: 24px;
+
+        --body-width: calc(100vw - 1rem);
+
+        --fs-normal: 12px;
+        --fs-display: 14px;
+    }
+}

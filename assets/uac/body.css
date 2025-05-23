@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #313131;
+    color: white;
+    font-family: "IBM Plex Mono", monospace
+}
+
+#content {
+    width: 100vw;
+    height: calc(100vh - var(--header-height) - var(--footer-height) - 1.33rem);
+
+    main {
+        width: var(--body-width);
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+
+    hr {
+        margin-bottom: 3rem;
+        width: 32rem;
+        max-width: 50vw;
+        color: #0000;
+        border-bottom: 2px solid #fff4;
+    }
+
+    table.display {
+        font-size: var(--fs-display);
+        margin: 0 auto;
+        border-collapse: collapse;
+
+        > tbody > tr > td {
+            padding: 0.5rem;
+        }
+
+        > tbody > tr {
+            background-color: #0003;
+
+            &:nth-child(odd){
+                background-color: #0005;
+            }
+
+            td {
+                &:first-child {
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                &:last-child {
+                    padding-left: 2rem;
+                    text-align: right;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    p.display {
+        font-size: var(--fs-display);
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    > div {
+        margin: 4rem 2rem;
+    }
+
+    a {
+        color: gainsboro;
+    }
+}

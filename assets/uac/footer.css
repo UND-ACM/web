@@ -1,0 +1,31 @@
+#footer {
+    width: 100vw;
+    box-shadow: -2px 0 20px #0002;
+    height: var(--footer-height);
+    background-color: #444;
+    display: flex;
+
+    a {
+        color: gainsboro;
+    }
+
+    p {
+        font-size: 16px;
+        margin: auto 2rem;
+
+        &:first-child{
+            margin-right: auto;
+        }
+    }
+
+    @media only screen
+    and (max-width: 1024px)
+    {
+        display: block;
+        padding-top: 1.25rem;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
