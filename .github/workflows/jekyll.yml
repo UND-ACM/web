@@ -22,13 +22,7 @@ jobs:
       - name: Install NPM Packages
         run: npm install
       - name: Execute PostCSS
-        run: >
-          npx postcss
-            --use postcss-import
-            --use autoprefixer
-            --use postcss-nested
-            -o _site/assets/dist.css
-            _site/assets/style.css
+        run: npx postcss assets/style.css -o dist.css
       - name: Version and Install `dist.css`
         run: |
           export CSS_DIST_HASH=$( md5sum dist.css | cut -c 1-8 );
