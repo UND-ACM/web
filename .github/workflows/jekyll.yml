@@ -19,10 +19,6 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
           cache-version: 0
-      - name: Build with Jekyll
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
       - name: Install NPM Packages
         run: npm install
       - name: Execute PostCSS
@@ -33,7 +29,18 @@ jobs:
               --use postcss-nested \
               -o _site/assets/dist.css \
               _site/assets/style.css
-      - name: Upload artifact
+      - name: Version and Install `dist.css`
+        run: |
+          export CSS_DIST_HASH=$( md5sum dist.css | cut -c 1-8 );
+          rm assets/style.css;
+          rm assets/uac/*.css;
+          mv dist.css assets/dist_$CSS_DIST_HASH.css;
+          sed "s~/assets/style\.css~/assets/dist_$CSS_DIST_HASH\.css~" -i _includes/styles.html
+      - name: Build with Jekyll
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         id: upload
 
