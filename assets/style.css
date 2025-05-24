@@ -34,14 +34,28 @@
     @media only screen
     and (max-width: 640px)
     {
-        --header-height: 12rem;
-        --header-logo-size: 6rem;
-        --header-span-size: 9px;
-        --header-h1-size: 18px;
+        --header-height: 10rem;
+        --header-logo-size: 7rem;
+        --header-span-size: 12px;
+        --header-h1-size: 22px;
 
         --body-width: calc(100vw - 1rem);
 
         --fs-normal: 12px;
         --fs-display: 14px;
+    }
+
+    @media only screen
+    and (max-width: 520px)
+    {
+        --header-height: 8rem;
+        --header-logo-size: 6rem;
+        --header-span-size: 9px;
+        --header-h1-size: 14px;
+
+        --body-width: calc(100vw - 1rem);
+
+        --fs-normal: 11px;
+        --fs-display: 13px;
     }
 }
