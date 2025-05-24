@@ -60,7 +60,7 @@ jobs:
     - name: Download artifact
       uses: actions/download-artifact@v4
       with:
-          name: ${{needs.build.outputs.artifact_id}}
+        artifact-ids: ${{needs.build.outputs.artifact_id}}
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
