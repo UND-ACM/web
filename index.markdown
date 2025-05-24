@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+desc: The University of North Dakota Association for Computing Machinery Chapter (UND ACM)'s homepage. Welcome!
 ---
 
 The University of North Dakota Association for Computing Machinery chapter (UND ACM) is still building this page! 
