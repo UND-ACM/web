@@ -9,10 +9,10 @@ Check back soon for updates, or check below for other communication channels.
 
 ---
 
-|---------------------|----------------------------------------------------------------------------------------------|
-| Location            | Upson II, Rm 371                                                                             |
-| Meetings            | Mondays @ 5:00PM CST                                                                         |
-| Discord             | [discord.gg](https://discord.gg/jpxZaaA6tm)                               |
-| Mailing List        | [forms.office.com](https://forms.office.com/r/HZqnSSjvXE)               |
+|---------------------|---------------------------------------------------------------------|
+| Location            | Upson II, Rm 371                                                    |
+| Meetings            | Mondays @ 5:00PM CST                                                |
+| Discord             | [discord.gg](https://discord.gg/jpxZaaA6tm)                         |
+| Mailing List        | [forms.office.com](https://forms.office.com/r/HZqnSSjvXE)           |
 | Student Involvement | [involvement.und.edu](https://involvement.und.edu/organization/acm) |
 {: .display}

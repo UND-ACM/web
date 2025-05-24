@@ -10,7 +10,7 @@
     }
 
     p {
-        font-size: 16px;
+        font-size: var(--fs-normal);
         margin: auto 2rem;
 
         &:first-child{
@@ -23,9 +23,5 @@
     {
         display: block;
         padding-top: 1.25rem;
-
-        p {
-            font-size: 14px;
-        }
     }
 }

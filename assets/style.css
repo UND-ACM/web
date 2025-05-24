@@ -35,9 +35,9 @@
     and (max-width: 640px)
     {
         --header-height: 12rem;
-        --header-logo-size: 8rem;
-        --header-span-size: 12px;
-        --header-h1-size: 24px;
+        --header-logo-size: 6rem;
+        --header-span-size: 9px;
+        --header-h1-size: 18px;
 
         --body-width: calc(100vw - 1rem);
 
