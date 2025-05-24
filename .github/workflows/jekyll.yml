@@ -23,6 +23,16 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+      - name: Install NPM Packages
+        run: npm install
+      - name: Execute PostCSS
+        run: |
+          npx postcss \
+              --use postcss-import \
+              --use autoprefixer \
+              --use postcss-nested \
+              -o _site/assets/dist.css \
+              _site/assets/style.css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         id: upload
