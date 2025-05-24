@@ -7,15 +7,17 @@
     <meta charset="utf-8"/>
 
     <!-- Social Cards (OpenGraph) -->
-    <meta property="og:url" content="https://und.acm.org">
+    <meta property="og:title" content="{{ page.title }} | UND ACM">
+    <meta property="og:url" content="{{ page.url }}">
     <meta property="og:type" content="website">
-    <meta name="og:description" content="{{ page.desc }}"/>
-    <meta name="og:image" content="/assets/img/card.jpg"/>
+    <meta property="og:description" content="{{ page.desc }}"/>
+    <meta property="og:image" content="/assets/img/card.jpg"/>
 
     <!-- Social Cards (Twitter) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="und.acm.org">
-    <meta property="twitter:url" content="https://und.acm.org">
+    <meta name="twitter:domain" content="und.acm.org">
+    <meta name="twitter:url" content="https://und.acm.org">
+    <meta name="twitter:title" content="{{ page.title }} | UND ACM">
     <meta name="twitter:description" content="{{ page.desc }}"/>
     <meta name="twitter:image" content="/assets/img/card.jpg">
 
