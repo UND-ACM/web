@@ -3,9 +3,6 @@
 @import url(./uac/header.css);
 
 :root {
-    /* Static vars */
-    --footer-height: 4rem;
-
     /* Responsive vars */
     --header-height: 20rem;
     --header-logo-size: 16rem;
@@ -13,6 +10,8 @@
     --header-h1-size: 48px;
 
     --body-width: 1024px;
+    --body-padding: 3rem;
+    --footer-height: 4rem;
 
     --fs-normal: 16px;
     --fs-display: 20px;
@@ -26,6 +25,7 @@
         --header-h1-size: 36px;
 
         --body-width: calc(100vw - 1rem);
+        --body-padding: 1rem;
 
         --fs-normal: 14px;
         --fs-display: 16px;
@@ -40,6 +40,7 @@
         --header-h1-size: 22px;
 
         --body-width: calc(100vw - 1rem);
+        --body-padding: 0.5rem;
 
         --fs-normal: 12px;
         --fs-display: 14px;
