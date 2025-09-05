@@ -30,8 +30,10 @@ body {
         margin: 0 auto;
         border-collapse: collapse;
 
-        > tbody > tr > td {
-            padding: 0.5rem;
+        > tbody > tr {
+            td, th {
+                padding: 0.5rem;
+            }
         }
 
         > tbody > tr {
@@ -41,12 +43,13 @@ body {
                 background-color: #0005;
             }
 
-            td {
-                &:first-child {
-                    font-weight: 700;
-                    text-transform: uppercase;
-                }
+            td:first-child, th:first-child {
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: left;
+            }
 
+            td {
                 &:last-child {
                     padding-left: 2rem;
                     text-align: right;
@@ -67,5 +70,26 @@ body {
 
     a {
         color: gainsboro;
+    }
+
+    .w100{
+        width: 100%;
+    }
+
+    .grid-2 {
+        display: inline-grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+
+
+        > .grid-item{
+            grid-column: span 1;
+            width: 100%;
+
+            @media only screen
+            and (max-width: 1024px){
+                grid-column: span 2;
+            }
+        }
     }
 }

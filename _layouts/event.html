@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<h1>{{page.title}}</h1>
+
+<div class="grid-2 w100">
+    <div class="grid-item">
+        <h2>Event Details</h2>
+        <table class="display w100">
+            <tbody>
+            <tr>
+                <th>Date</th>
+                <td>{{ page.time | date: "%a, %B %d, %Y" }}</td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td>{{ page.time | date: "%l:%M %p" }}</td>
+            </tr>
+            <tr>
+                <th>Location</th>
+                <td>{{ page.location | default: "TBD" }}</td>
+            </tr>
+            <tr>
+                <th>Duration</th>
+                <td>{{ page.duration | default: "TBD" }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="grid-item">
+        <h2>Event Description</h2>
+        {{ content }}
+    </div>
+</div>
