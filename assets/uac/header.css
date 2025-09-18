@@ -42,11 +42,13 @@
         height: var(--header-logo-size);
     }
 
-    > div {
+    > a {
         display: flex;
         text-transform: uppercase;
         margin: auto auto;
         z-index: 4;
+        color: white;
+        text-decoration: none;
 
         > div:last-child{
             margin-left: 2rem;
