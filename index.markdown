@@ -21,7 +21,7 @@ Check back soon for updates, or check below for other communication channels.
         {% for event in site.events %}
             {% if event.time >= site.time %}
                 <tr>
-                    <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+                    <td><a href="{{ event.url }}.html">{{ event.title }}</a></td>
                     <td>{{ event.time | date: "%a, %B %e, %Y" }}</td>
                     <td>{{ event.time | date: "%l:%M %p" }}</td>
                     <td>{{ event.duration }}</td>
