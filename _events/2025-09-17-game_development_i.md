@@ -2,7 +2,7 @@
 layout: event
 time: 2025-09-17 17:00:00 -0500
 title: Game Development I
-location: Upson II, Room TBD
+location: Harrington Hall, Room 217
 duration: 1.5 hours
 ---
 Interested in learning game development? In this 1.5-hour seminar, you'll learn the basics of GameMaker, a popular
