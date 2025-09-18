@@ -8,6 +8,29 @@ The University of North Dakota Association for Computing Machinery chapter (UND 
 Check back soon for updates, or check below for other communication channels.
 {: .display}
 
+
+## Upcoming Events
+<table style="width: 100%;">
+    <thead>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Time (CST)</th>
+        <th>Duration</th>
+    </thead>
+    <tbody>
+        {% for event in site.events %}
+            {% if event.time >= site.time %}
+                <tr>
+                    <td><a href="{{ event.url }}">{{ event.title }}</a></td>
+                    <td>{{ event.time | date: "%a, %B %e, %Y" }}</td>
+                    <td>{{ event.time | date: "%l:%M %p" }}</td>
+                    <td>{{ event.duration }}</td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </tbody>
+</table>
+
 ---
 
 |---------------------|---------------------------------------------------------------------|
